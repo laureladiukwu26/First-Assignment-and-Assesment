@@ -846,3 +846,170 @@ html, body {
         text-align: center;
     }
 }
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .nav-buttons {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav ul {
+        gap: 12px;
+    }
+
+    nav ul a {
+        font-size: 12px;
+    }
+
+    .nav-buttons a {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .statistics {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        padding: 45px 25px;
+    }
+
+    .stats-container {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 30px 15px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .stats-heading h2 {
+        font-size: 23px;
+    }
+
+    .stat h3 {
+        font-size: 19px;
+    }
+
+    .stat p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .features {
+        grid-template-columns: 1fr;
+        padding: 60px 25px;
+        gap: 40px;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 35px 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .features-intro h2 {
+        font-size: 26px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .feature h3 {
+        font-size: 18px;
+    }
+
+    .feature p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .pricing {
+        padding: 60px 25px;
+    }
+
+    .pricing-container {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .pricing-card {
+        width: 100%;
+        max-width: 380px;
+    }
+
+    .professional {
+        transform: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .pricing-heading h2 {
+        font-size: 26px;
+    }
+
+    .pricing-card {
+        padding: 30px 25px;
+    }
+
+    .pricing-card h2 {
+        font-size: 27px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .faq {
+        padding: 35px 20px;
+        background-size: 180px, 180px;
+    }
+
+    .faq-container {
+        width: 100%;
+    }
+
+    .faq h2 {
+        font-size: 27px;
+    }
+
+    .faq summary {
+        font-size: 14px;
+        line-height: 1.5;
+        padding-right: 35px;
+    }
+
+    .faq details p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .faq {
+        background-size: 100px, 100px;
+    }
+
+    .faq h2 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .faq details {
+        padding: 20px 0;
+    }
+}
