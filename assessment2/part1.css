@@ -318,9 +318,6 @@ nav ul a {
     height: 30px;
 }
 
-
-/* URL SHORTENING FORM */
-
 .url-form-section {
     background: linear-gradient(135deg,
             #3f0428,
@@ -575,4 +572,39 @@ nav ul a {
 .information a { 
     color: #3f0428;
     text-decoration: none;
+}
+
+/* Make images fit their containers */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 40px 25px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .footer {
+        grid-template-columns: 1fr 1fr;
+        padding: 35px 20px;
+        gap: 30px 15px;
+    }
+
+    .information {
+        grid-column: 1 / -1;
+        padding-right: 0;
+        text-align: center;
+    }
+
 }
