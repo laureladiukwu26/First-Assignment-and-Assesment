@@ -69,7 +69,7 @@ nav ul a {
 
 .hero h1 {
     font-size: 40px;
-    line-height: 1.7;
+    line-height: 1.9;
     max-width: 850px;
     margin: 0 auto 20px;
 }
@@ -86,8 +86,8 @@ nav ul a {
 .hero h1 .highlight img {
     width: 55%;
     position: absolute;
-    left: 18%;
-    bottom: -3px;
+    left: 22%;
+    bottom: -12px;
 }
 
 .hero p {
