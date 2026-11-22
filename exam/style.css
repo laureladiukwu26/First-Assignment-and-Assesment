@@ -11,7 +11,7 @@
     --emerald-light: #12A36B;
     --text-light: #E4EAE5;
     --text-muted: #A5AEA7;
-    --border: #344039;
+    --border: #b5e0c7;
 }
 
 * {
@@ -39,6 +39,10 @@ ul {
 img {
     max-width: 100%;
     display: block;
+}
+
+.mobile-menu {
+    display: none;
 }
 
 
@@ -112,13 +116,18 @@ img {
     display: flex;
     align-items: center;
     padding: 70px 12%;
-    background:
+
+    background-image:
         linear-gradient(
             90deg,
-            rgba(16, 20, 18, 0.96),
-            rgba(16, 20, 18, 0.65)
+            rgba(16, 20, 18, 0.90),
+            rgba(16, 20, 18, 0.55)
         ),
-        linear-gradient(135deg, #263C30, #101412);
+        url("assets/Background\ image.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .introduction {
@@ -399,70 +408,70 @@ img {
 
 @media (max-width: 768px) {
 
-    .nav-bar {
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 20px;
-    }
+.nav-bar {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 15px 5%;
+}
 
-    .nav-pages {
-        gap: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+.nav-pages {
+    display: none;
+}
 
-    .nav-sign {
-        justify-content: center;
-    }
+.nav-sign {
+    flex-direction: row;
+    gap: 8px;
+}
 
-    .introduction h1 {
-        font-size: 29px;
-    }
+.mobile-menu {
+    display: block;
+    position: relative;
+}
 
-    .about-section {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 60px 7%;
-    }
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 8px;
+    cursor: pointer;
+    list-style: none;
+}
 
-    .about-section img {
-        width: 100%;
-    }
+.hamburger::-webkit-details-marker {
+    display: none;
+}
 
-    .conviction {
-        padding: 60px 7%;
-    }
+.hamburger span {
+    width: 24px;
+    height: 3px;
+    background-color: var(--emerald-light);
+    border-radius: 3px;
+}
 
-    .conviction-cards {
-        flex-wrap: wrap;
-    }
+.mobile-links {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    width: 180px;
+    padding: 10px;
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    z-index: 100;
+}
 
-    .conviction-card {
-        flex: 1 1 250px;
-    }
+.mobile-links a {
+    display: block;
+    padding: 12px;
+    color: var(--text-light);
+}
 
-    .testimonial {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .community {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .community-content h2 {
-        font-size: 26px;
-    }
-
-    .footer {
-        flex-direction: column;
-    }
-
-    .footer-links {
-        flex-wrap: wrap;
-        gap: 35px;
-    }
+.mobile-links a:hover {
+    color: var(--emerald-light);
+    background-color: var(--bg-card);
+}
 }
 
 @media (max-width: 480px) {
