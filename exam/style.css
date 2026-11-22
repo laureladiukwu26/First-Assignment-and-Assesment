@@ -411,11 +411,11 @@ img {
         padding: 20px;
     }
 
-    /*.nav-pages {
+    .nav-pages {
         gap: 15px;
         flex-wrap: wrap;
         justify-content: center;
-    }*/
+    }
 
     .nav-sign {
         justify-content: center;
