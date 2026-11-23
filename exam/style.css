@@ -3,14 +3,14 @@
 ================================= */
 
 :root {
-    --bg-dark: #101412;
-    --bg-surface: #1B211E;
-    --bg-card: #202923;
-    --emerald: #087A50;
-    --emerald-light: #12A36B;
-    --text-light: #E4EAE5;
-    --text-muted: #A5AEA7;
-    --border: #b5e0c7;
+    --bg-dark: #171020;
+    --bg-surface: #241832;
+    --bg-card: #30213F;
+    --emerald: #A77B27;
+    --emerald-light: #D6B45B;
+    --text-light: #F0E9F5;
+    --text-muted: #B9AFC4;
+    --border: #51415F;
 }
 
 * {
@@ -154,7 +154,7 @@ img {
 }
 
 .introduction a:hover,
-.community-content a:hover {
+.community-content a:hover, .testimonial-content a:hover {
     background-color: var(--emerald-light);
 }
 
@@ -245,6 +245,9 @@ img {
     height: 55px;
     object-fit: contain;
     margin-bottom: 15px;
+    background-color: var( --border);
+    padding: 0;
+    border-radius: 50px;
 }
 
 .conviction-card h3 {
@@ -267,7 +270,7 @@ img {
     align-items: center;
     gap: 50px;
     padding: 85px 8%;
-    background-color: #16231B;
+    background-color: var(--bg-dark);
 }
 
 .testimonial>img {
@@ -317,6 +320,7 @@ img {
     justify-content: space-between;
     gap: 60px;
     padding: 100px 10%;
+    background-color: var(--bg-surface);
 }
 
 .community-images {
@@ -370,7 +374,7 @@ img {
     justify-content: space-between;
     gap: 50px;
     padding: 65px 8%;
-    background-color: var(--bg-surface);
+    background-color: var(--bg-dark);
     border-top: 1px solid var(--border);
 }
 
