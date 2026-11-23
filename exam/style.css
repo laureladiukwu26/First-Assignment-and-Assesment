@@ -487,10 +487,7 @@ img {
         gap: 35px;
     }
 
-    .mobile-menu {
-        display: block;
-        position: relative;
-    }
+    
 
     .hamburger {
         display: flex;
@@ -535,6 +532,11 @@ img {
         background-color: var(--bg-card);
     }
 }
+
+.mobile-menu {
+        display: block;
+        position: relative;
+    }
 
 @media (max-width: 480px) {
 
