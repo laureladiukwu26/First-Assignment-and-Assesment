@@ -399,7 +399,7 @@ img {
 }
 
 .mobile-menu {
-        display: block;
+        display: none;
         position: relative;
     }
 
@@ -492,7 +492,7 @@ img {
     }
 
     /*.mobile-menu {
-        display: block;
+        display: none;
         position: relative;
     }*/
     
