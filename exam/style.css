@@ -398,6 +398,10 @@ img {
     color: var(--emerald-light);
 }
 
+.mobile-menu {
+        display: block;
+        position: relative;
+    }
 
 /* =================================
    9. RESPONSIVE DESIGN
@@ -413,7 +417,7 @@ img {
         padding: 15px 5%;
     }
 
-    .nav-pages {
+    .nav-bar .nav-pages {
         display: none;
     }
 
@@ -487,8 +491,11 @@ img {
         gap: 35px;
     }
 
+    /*.mobile-menu {
+        display: block;
+        position: relative;
+    }*/
     
-
     .hamburger {
         display: flex;
         flex-direction: column;
@@ -533,10 +540,6 @@ img {
     }
 }
 
-.mobile-menu {
-        display: block;
-        position: relative;
-    }
 
 @media (max-width: 480px) {
 
