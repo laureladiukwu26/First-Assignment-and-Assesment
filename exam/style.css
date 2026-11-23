@@ -426,22 +426,6 @@ img {
         gap: 8px;
     }
 
-    /*.nav-bar {
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 20px;
-    }
-
-    .nav-pages {
-        gap: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .nav-sign {
-        justify-content: center;
-    }*/
-
     .introduction h1 {
         font-size: 29px;
     }
@@ -491,15 +475,11 @@ img {
         gap: 35px;
     }
 
-    /*.mobile-menu {
-        display: none;
-        position: relative;
-    }*/
     .mobile-menu {
         display: block;
         position: relative;
     }
-    
+
     .hamburger {
         display: flex;
         flex-direction: column;
@@ -557,6 +537,7 @@ img {
 
     .nav-sign a {
         padding: 9px 15px;
+        font-size: 10px;
     }
 
     .introduction h1 {
